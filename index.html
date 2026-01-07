@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5 | API Integration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>API Integration Dashboard</h1>
+    <p>Frontend ↔ Backend Communication</p>
+</header>
+
+<main class="container">
+
+    <!-- Form Section -->
+    <section class="form-card">
+        <h2>Add User</h2>
+
+        <div class="form-group">
+            <label><b>Name:</b></label>
+            <input type="text" id="name" placeholder="Enter Your Name Here">
+        </div>
+
+        <div class="form-group">
+            <label><b>Email:</b></label>
+            <input type="email" id="email" placeholder="Enter Your Email Here">
+        </div>
+
+        <div class="form-group">
+            <label><b>Role:</b></label>
+            <select id="role">
+                <option>Student</option>
+                <option>Developer</option>
+                <option>Working Professional</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <button class="btn btn-primary" onclick="addUser()">Add User</button>
+        <p id="message" class="message"></p>
+    </section>
+
+    <!-- Data Section -->
+    <section class="data-section">
+        <h2>Users List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
